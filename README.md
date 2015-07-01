@@ -1,2 +1,2 @@
 # Marimotion
-Core Motion Sample for watchOS 2
+Roll the marimo. Change the world.

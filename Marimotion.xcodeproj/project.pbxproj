@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		211D25BB1B3E5B0700430F86 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211D25BA1B3E5B0700430F86 /* CoreMotion.framework */; };
+		21F4D99B1B32C41200058DFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F4D99A1B32C41200058DFA /* main.m */; };
+		21F4D99E1B32C41200058DFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F4D99D1B32C41200058DFA /* AppDelegate.m */; };
+		21F4D9A11B32C41200058DFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F4D9A01B32C41200058DFA /* ViewController.m */; };
+		21F4D9A41B32C41200058DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F4D9A21B32C41200058DFA /* Main.storyboard */; };
+		21F4D9A61B32C41200058DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F4D9A51B32C41200058DFA /* Assets.xcassets */; };
+		21F4D9A91B32C41200058DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F4D9A71B32C41200058DFA /* LaunchScreen.storyboard */; };
+		21F4D9AE1B32C41200058DFA /* Marimotion WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 21F4D9AD1B32C41200058DFA /* Marimotion WatchKit App.app */; };
+		21F4D9B41B32C41200058DFA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F4D9B21B32C41200058DFA /* Interface.storyboard */; };
+		21F4D9B61B32C41200058DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F4D9B51B32C41200058DFA /* Assets.xcassets */; };
+		21F4D9BD1B32C41200058DFA /* Marimotion WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21F4D9BC1B32C41200058DFA /* Marimotion WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		21F4D9C31B32C41200058DFA /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F4D9C21B32C41200058DFA /* InterfaceController.m */; };
+		21F4D9C61B32C41200058DFA /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F4D9C51B32C41200058DFA /* ExtensionDelegate.m */; };
+		21F4D9C81B32C41200058DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F4D9C71B32C41200058DFA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21F4D9AF1B32C41200058DFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21F4D98E1B32C41200058DFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21F4D9AC1B32C41200058DFA;
+			remoteInfo = "Marimotion WatchKit App";
+		};
+		21F4D9BE1B32C41200058DFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21F4D98E1B32C41200058DFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21F4D9BB1B32C41200058DFA;
+			remoteInfo = "Marimotion WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21F4D9CF1B32C41200058DFA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				21F4D9BD1B32C41200058DFA /* Marimotion WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F4D9D31B32C41200058DFA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				21F4D9AE1B32C41200058DFA /* Marimotion WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		211D25BA1B3E5B0700430F86 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		21F4D9961B32C41200058DFA /* Marimotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marimotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F4D99A1B32C41200058DFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21F4D99C1B32C41200058DFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		21F4D99D1B32C41200058DFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		21F4D99F1B32C41200058DFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		21F4D9A01B32C41200058DFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		21F4D9A31B32C41200058DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21F4D9A51B32C41200058DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21F4D9A81B32C41200058DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21F4D9AA1B32C41200058DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21F4D9AD1B32C41200058DFA /* Marimotion WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marimotion WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F4D9B31B32C41200058DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		21F4D9B51B32C41200058DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21F4D9B71B32C41200058DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21F4D9BC1B32C41200058DFA /* Marimotion WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Marimotion WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F4D9C11B32C41200058DFA /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		21F4D9C21B32C41200058DFA /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		21F4D9C41B32C41200058DFA /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		21F4D9C51B32C41200058DFA /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		21F4D9C71B32C41200058DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21F4D9C91B32C41200058DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21F4D9931B32C41200058DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F4D9B91B32C41200058DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211D25BB1B3E5B0700430F86 /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21F4D98D1B32C41200058DFA = {
+			isa = PBXGroup;
+			children = (
+				21F4D9981B32C41200058DFA /* Marimotion */,
+				21F4D9B11B32C41200058DFA /* Marimotion WatchKit App */,
+				21F4D9C01B32C41200058DFA /* Marimotion WatchKit Extension */,
+				21F4D9971B32C41200058DFA /* Products */,
+				211D25BA1B3E5B0700430F86 /* CoreMotion.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		21F4D9971B32C41200058DFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21F4D9961B32C41200058DFA /* Marimotion.app */,
+				21F4D9AD1B32C41200058DFA /* Marimotion WatchKit App.app */,
+				21F4D9BC1B32C41200058DFA /* Marimotion WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21F4D9981B32C41200058DFA /* Marimotion */ = {
+			isa = PBXGroup;
+			children = (
+				21F4D99C1B32C41200058DFA /* AppDelegate.h */,
+				21F4D99D1B32C41200058DFA /* AppDelegate.m */,
+				21F4D99F1B32C41200058DFA /* ViewController.h */,
+				21F4D9A01B32C41200058DFA /* ViewController.m */,
+				21F4D9A21B32C41200058DFA /* Main.storyboard */,
+				21F4D9A51B32C41200058DFA /* Assets.xcassets */,
+				21F4D9A71B32C41200058DFA /* LaunchScreen.storyboard */,
+				21F4D9AA1B32C41200058DFA /* Info.plist */,
+				21F4D9991B32C41200058DFA /* Supporting Files */,
+			);
+			path = Marimotion;
+			sourceTree = "<group>";
+		};
+		21F4D9991B32C41200058DFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21F4D99A1B32C41200058DFA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21F4D9B11B32C41200058DFA /* Marimotion WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				21F4D9B21B32C41200058DFA /* Interface.storyboard */,
+				21F4D9B51B32C41200058DFA /* Assets.xcassets */,
+				21F4D9B71B32C41200058DFA /* Info.plist */,
+			);
+			path = "Marimotion WatchKit App";
+			sourceTree = "<group>";
+		};
+		21F4D9C01B32C41200058DFA /* Marimotion WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				21F4D9C11B32C41200058DFA /* InterfaceController.h */,
+				21F4D9C21B32C41200058DFA /* InterfaceController.m */,
+				21F4D9C41B32C41200058DFA /* ExtensionDelegate.h */,
+				21F4D9C51B32C41200058DFA /* ExtensionDelegate.m */,
+				21F4D9C71B32C41200058DFA /* Assets.xcassets */,
+				21F4D9C91B32C41200058DFA /* Info.plist */,
+			);
+			path = "Marimotion WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21F4D9951B32C41200058DFA /* Marimotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F4D9D41B32C41200058DFA /* Build configuration list for PBXNativeTarget "Marimotion" */;
+			buildPhases = (
+				21F4D9921B32C41200058DFA /* Sources */,
+				21F4D9931B32C41200058DFA /* Frameworks */,
+				21F4D9941B32C41200058DFA /* Resources */,
+				21F4D9D31B32C41200058DFA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21F4D9B01B32C41200058DFA /* PBXTargetDependency */,
+			);
+			name = Marimotion;
+			productName = Marimotion;
+			productReference = 21F4D9961B32C41200058DFA /* Marimotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21F4D9AC1B32C41200058DFA /* Marimotion WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F4D9D01B32C41200058DFA /* Build configuration list for PBXNativeTarget "Marimotion WatchKit App" */;
+			buildPhases = (
+				21F4D9AB1B32C41200058DFA /* Resources */,
+				21F4D9CF1B32C41200058DFA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21F4D9BF1B32C41200058DFA /* PBXTargetDependency */,
+			);
+			name = "Marimotion WatchKit App";
+			productName = "Marimotion WatchKit App";
+			productReference = 21F4D9AD1B32C41200058DFA /* Marimotion WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		21F4D9BB1B32C41200058DFA /* Marimotion WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F4D9CC1B32C41200058DFA /* Build configuration list for PBXNativeTarget "Marimotion WatchKit Extension" */;
+			buildPhases = (
+				21F4D9B81B32C41200058DFA /* Sources */,
+				21F4D9B91B32C41200058DFA /* Frameworks */,
+				21F4D9BA1B32C41200058DFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Marimotion WatchKit Extension";
+			productName = "Marimotion WatchKit Extension";
+			productReference = 21F4D9BC1B32C41200058DFA /* Marimotion WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21F4D98E1B32C41200058DFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Kosuke Ogawa";
+				TargetAttributes = {
+					21F4D9951B32C41200058DFA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					21F4D9AC1B32C41200058DFA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					21F4D9BB1B32C41200058DFA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 21F4D9911B32C41200058DFA /* Build configuration list for PBXProject "Marimotion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21F4D98D1B32C41200058DFA;
+			productRefGroup = 21F4D9971B32C41200058DFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21F4D9951B32C41200058DFA /* Marimotion */,
+				21F4D9AC1B32C41200058DFA /* Marimotion WatchKit App */,
+				21F4D9BB1B32C41200058DFA /* Marimotion WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21F4D9941B32C41200058DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F4D9A91B32C41200058DFA /* LaunchScreen.storyboard in Resources */,
+				21F4D9A61B32C41200058DFA /* Assets.xcassets in Resources */,
+				21F4D9A41B32C41200058DFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F4D9AB1B32C41200058DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F4D9B61B32C41200058DFA /* Assets.xcassets in Resources */,
+				21F4D9B41B32C41200058DFA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F4D9BA1B32C41200058DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F4D9C81B32C41200058DFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21F4D9921B32C41200058DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F4D9A11B32C41200058DFA /* ViewController.m in Sources */,
+				21F4D99E1B32C41200058DFA /* AppDelegate.m in Sources */,
+				21F4D99B1B32C41200058DFA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F4D9B81B32C41200058DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F4D9C61B32C41200058DFA /* ExtensionDelegate.m in Sources */,
+				21F4D9C31B32C41200058DFA /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21F4D9B01B32C41200058DFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21F4D9AC1B32C41200058DFA /* Marimotion WatchKit App */;
+			targetProxy = 21F4D9AF1B32C41200058DFA /* PBXContainerItemProxy */;
+		};
+		21F4D9BF1B32C41200058DFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21F4D9BB1B32C41200058DFA /* Marimotion WatchKit Extension */;
+			targetProxy = 21F4D9BE1B32C41200058DFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21F4D9A21B32C41200058DFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F4D9A31B32C41200058DFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21F4D9A71B32C41200058DFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F4D9A81B32C41200058DFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		21F4D9B21B32C41200058DFA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F4D9B31B32C41200058DFA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21F4D9CA1B32C41200058DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21F4D9CB1B32C41200058DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21F4D9CD1B32C41200058DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Marimotion WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koogawa.Marimotion.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		21F4D9CE1B32C41200058DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Marimotion WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koogawa.Marimotion.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		21F4D9D11B32C41200058DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				IBSC_MODULE = Marimotion_WatchKit_Extension;
+				INFOPLIST_FILE = "Marimotion WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koogawa.Marimotion.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		21F4D9D21B32C41200058DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				IBSC_MODULE = Marimotion_WatchKit_Extension;
+				INFOPLIST_FILE = "Marimotion WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koogawa.Marimotion.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		21F4D9D51B32C41200058DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Marimotion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koogawa.Marimotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		21F4D9D61B32C41200058DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Marimotion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koogawa.Marimotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21F4D9911B32C41200058DFA /* Build configuration list for PBXProject "Marimotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F4D9CA1B32C41200058DFA /* Debug */,
+				21F4D9CB1B32C41200058DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F4D9CC1B32C41200058DFA /* Build configuration list for PBXNativeTarget "Marimotion WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F4D9CD1B32C41200058DFA /* Debug */,
+				21F4D9CE1B32C41200058DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F4D9D01B32C41200058DFA /* Build configuration list for PBXNativeTarget "Marimotion WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F4D9D11B32C41200058DFA /* Debug */,
+				21F4D9D21B32C41200058DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F4D9D41B32C41200058DFA /* Build configuration list for PBXNativeTarget "Marimotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F4D9D51B32C41200058DFA /* Debug */,
+				21F4D9D61B32C41200058DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21F4D98E1B32C41200058DFA /* Project object */;
+}
